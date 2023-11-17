@@ -1,0 +1,67 @@
+body{
+    display: block;
+    font-family: 'Oswald', Verdana;
+    margin: 0;
+}
+
+img{
+    width: 50%;
+}
+#fond {
+    display: block;
+    width: 100%;
+    min-height: 550px;
+    background-image: url(images/09-03-mer-patrimoine-et-loisirs.jpg);
+    font-size: 7rem;
+    color: white;
+    font-weight: bold;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+h1{
+    margin: 0;
+    padding-top: 20%;
+}
+#intro {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    margin-top: -3.875rem;
+    margin-bottom: 3.125rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    align-items: center;
+padding-left: 6rem;
+padding-right: 6rem;
+padding-top: 1rem;
+}
+#intro h2{
+    text-align: center;
+    color: #0047A3;
+    margin: 18px;
+}
+h2{
+    color: #0047A3;
+}
+
+#plage {
+    text-align: center;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-bottom: 4rem;
+}
+
+#plage img{
+    border-radius: 4%;
+}
+
+#carte{
+    text-align: center;
+}
+#carte h2{
+    margin-bottom: 3rem;
+}
+#carte img{
+    margin: 0;
+    width: 90rem;
+}
