@@ -1,0 +1,145 @@
+footer .social {
+    text-align:center;
+    padding-bottom:25px;
+}
+footer .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+}
+footer .social > a:hover {
+    opacity:0.9;
+}
+footer{
+    background-color: #0047A3;
+    border-top: 4px solid #1fb3bf;
+    padding: 50px 0;
+    display:flex ;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+footer .logo img{
+    width: 100px ;
+    object-fit: contain;    
+}
+footer h2 a, footer h3{
+    color: #2a2a2a;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li a{
+    color: white;
+}
+.copyright{
+    background-color: #0047A3;
+    text-align: center;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: white;
+}
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .logo{
+    font-weight: bolder ;
+    font-size: 25px;
+    color: #333;
+}
+header .logo img{
+    width: 100px ;
+    object-fit: contain;    
+}
+header .navbar ul{
+    list-style: none;
+}
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+header .navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: #333;
+    display: block;
+}
+header .navbar ul li a:hover{
+    background-color: #333;
+    color: white;
+}
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: white;
+    display: none;
+}
+header .navbar ul li ul li{
+    width: 100%;
+    border-top:1px solid rgba(0, 0, 0, .1) ;
+}
+header .navbar ul li:hover > ul,header .navbar ul li:focus-within > ul{
+    display: initial;
+}
+#menu-bar{
+    display: none;
+}
+header label{
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width:991px) {
+    header{
+        padding: 20px;
+    }
+    header label{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top:100%; left: 0;right: 0;
+        background: white;
+        border-top: 1px solid rgb(0,0,0,.1);
+        display: none;
+    }
+    header .navbar ul li {
+        width: 100%;
+    }
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+    header .navbar ul li ul li{
+        background: white;
+    }
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+}

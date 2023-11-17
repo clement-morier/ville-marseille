@@ -1,0 +1,171 @@
+.actu{
+    margin-top: 50px;
+    background-color: white;
+}
+.actu div .titre{
+    text-align: center;
+}
+.actu div .titre h6{
+    font-size: 2em;
+    margin-top: 100px;
+    color: black;
+}
+.actu div .titre h3{
+    font-size: 1.75em;
+    margin-top: 10px ;
+    color: lightskyblue;
+}
+.actu .card a h4,.actu .card a {
+    color: black;
+}
+.actu .container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 50px 0 100px 0;
+}
+.actu .card{
+    max-width: 500px;
+    min-height: 205px;
+    margin: 30px 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+.actu .card::before{
+    content: "";
+    position: absolute;
+    height: 5px;
+    background :linear-gradient(45deg, rgb(10,153,209), rgb(46,197,178));
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.actu .card:hover{
+    transform: translateY(-15px);
+}
+.actu .card:hover::before{
+    right: 0%;
+}
+.actu .card span{
+    font-size: 1.75em;
+    color: lightskyblue;
+    transition: 0.6s ease-in-out;
+}
+.actu .card:hover span{
+    transform: rotate(360deg);
+}
+.actu .card h4{
+    margin: 20px 0 7px 0;
+    font-size: 1.3em;
+}
+.Image{
+    background: url(../ville-marseille/Logo/Marseille.jpg) no-repeat;
+    min-height: 100vh;
+    background-size: cover ;
+    background-position: center;
+    background-attachment: fixed;
+}
+.Image p{
+    text-align: center;
+    color: white;
+    padding: 300px 0 0 0;
+    font-size: 8em;
+}
+.about{
+    background-color: #eef0f4;
+}
+.about .container{
+    padding: 70px 15px;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+.about .container .left{
+    max-width: 700px;
+}
+.about .container .left h3{
+    color: #2a2a2a;
+    font-size: 3em;
+    margin-bottom: 25px;
+
+}
+.about .container .right{
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about .container .right .icon{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 15px;
+    background: #eef0f4;
+    border-radius: 100%;
+    box-shadow: inset 9.91px 9.91px 15px #e2e4e8, inset -9.91px -9.91px 15px #fafcff;
+    transition:0.2s ;
+    color: black;
+}
+.about .container .right .icon:hover{
+    background: #eef0f4;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 0px #e2e4e8, inset 0px 0px 0px #fafcff, inset 9.91px 9.91px 15px #e2e4e8, inset -9.91px -9.91px 15px #fafcff;
+    cursor: pointer;
+}
+.about .container .right .icon span{
+    font-size: 2em;
+    transition: 0.3s;
+}
+.about .container .right .icon:hover span{
+    color: lightskyblue ;
+}
+.about .container .right .icon h4{
+    font-size: 1.2em;
+    margin-top: 5px;
+    transition: 0.3s;
+    transition-delay: 0.2 s;
+}
+.about .container .right .icon:hover h4{
+    color: lightskyblue ;
+}
+@media screen and (max-width: 991px) {
+    .about .container{
+        flex-direction: column;
+    }
+    .about .container .left{
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .about .container .right .icon{
+        margin: 15px;
+    }
+    .about .container .left{
+        text-align: justify;
+    }
+}
+@media screen and (min-width: 550px) {
+    .actu .card{
+        width: 600px !important;
+    }
+}
